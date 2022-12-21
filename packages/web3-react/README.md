@@ -1,21 +1,21 @@
 # Web3 react helpers
 
 Web3 react helpers for Lido Finance projects.
-Part of [Lido JS SDK](https://github.com/lidofinance/lido-js-sdk/#readme)
+Part of [Lido JS SDK](https://github.com/okx-dao/lido-js-sdk/#readme)
 
 ## Install
 
 ```bash
-yarn add @lido-sdk/web3-react
+yarn add @okx-lido-sdk/web3-react
 ```
 
 ## Provider
 
-To use hooks from `@lido-sdk/web3-react` you need to wrap your app with `ProviderWeb3`. ProviderWeb3 also contains `ProviderSDK` from `@lido-sdk/react`. No need to wrap again.
+To use hooks from `@okx-lido-sdk/web3-react` you need to wrap your app with `ProviderWeb3`. ProviderWeb3 also contains `ProviderSDK` from `@okx-lido-sdk/react`. No need to wrap again.
 
 ```tsx
-import { CHAINS } from '@lido-sdk/constants';
-import { ProviderWeb3 } from '@lido-sdk/web3-react';
+import { CHAINS } from '@okx-lido-sdk/constants';
+import { ProviderWeb3 } from '@okx-lido-sdk/web3-react';
 
 const rpc = {
   [CHAINS.Mainnet]: '/rpc/mainnet',
@@ -74,7 +74,7 @@ They return an object with a `connect` handler if connecting is possible. In Met
 import {
   useConnectorMetamask,
   useConnectorCoinbase,
-} from '@lido-sdk/web3-react';
+} from '@okx-lido-sdk/web3-react';
 
 const Component = () => {
   const metamask = useConnectorMetamask();
@@ -94,7 +94,7 @@ const Component = () => {
 Return an object with a `disconnect` handler if disconnection is possible.
 
 ```tsx
-import { useDisconnect } from '@lido-sdk/web3-react';
+import { useDisconnect } from '@okx-lido-sdk/web3-react';
 
 const Component = () => {
   const { disconnect } = useDisconnect();
@@ -110,7 +110,7 @@ const Component = () => {
 ## useSupportedChains
 
 ```tsx
-import { useSupportedChains } from '@lido-sdk/web3-react';
+import { useSupportedChains } from '@okx-lido-sdk/web3-react';
 
 const Component = () => {
   const { isUnsupported, supportedChains } = useSupportedChains();

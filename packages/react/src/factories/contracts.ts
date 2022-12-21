@@ -1,12 +1,12 @@
 import { BaseContract } from '@ethersproject/contracts';
-import { TOKENS, CHAINS, getTokenAddress } from '@lido-sdk/constants';
+import { TOKENS, CHAINS, getTokenAddress } from '@okx-lido-sdk/constants';
 import {
   WstethAbiFactory,
   StethAbiFactory,
   LdoAbiFactory,
   Factory,
   createContractGetter,
-} from '@lido-sdk/contracts';
+} from '@okx-lido-sdk/contracts';
 import { useMemo } from 'react';
 import { useSDK } from '../hooks';
 

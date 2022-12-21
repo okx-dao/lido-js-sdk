@@ -1,7 +1,7 @@
 # Contracts
 
 Contracts for Lido Finance projects.
-Part of [Lido JS SDK](https://github.com/lidofinance/lido-js-sdk/#readme)
+Part of [Lido JS SDK](https://github.com/okx-dao/lido-js-sdk/#readme)
 
 A Contract is an abstraction of code that has been deployed to the blockchain. A Contract may be sent transactions, which will trigger its code to be run with the input of the transaction data. More details in the [ethers docs](https://docs.ethers.io/v5/api/contract/contract/).
 
@@ -18,7 +18,7 @@ It uses [TypeChain](https://github.com/ethereum-ts/TypeChain) under the hood to 
 ## Install
 
 ```bash
-yarn add @lido-sdk/contracts
+yarn add @okx-lido-sdk/contracts
 ```
 
 ## Getters
@@ -34,7 +34,7 @@ _If a contract method requires signing a transaction, then you need a provider w
 Returns an instance of `Contract` based on [ERC20](https://eips.ethereum.org/EIPS/eip-20) standard contract ABI.
 
 ```ts
-import { getERC20Contract } from '@lido-sdk/contracts';
+import { getERC20Contract } from '@okx-lido-sdk/contracts';
 import { JsonRpcProvider } from '@ethersproject/providers';
 
 const provider = new JsonRpcProvider('http://localhost:8545');

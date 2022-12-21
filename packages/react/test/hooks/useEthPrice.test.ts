@@ -1,8 +1,8 @@
-jest.mock('@lido-sdk/contracts');
+jest.mock('@okx-lido-sdk/contracts');
 
 import { renderHook, act } from '@testing-library/react-hooks';
 import { BigNumber } from '@ethersproject/bignumber';
-import { getAggregatorContract } from '@lido-sdk/contracts';
+import { getAggregatorContract } from '@okx-lido-sdk/contracts';
 import { useEthPrice } from '../../src/hooks/useEthPrice';
 
 const mockGetter = getAggregatorContract as jest.MockedFunction<

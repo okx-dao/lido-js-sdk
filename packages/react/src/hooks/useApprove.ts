@@ -2,7 +2,7 @@ import invariant from 'tiny-invariant';
 import { useCallback } from 'react';
 import { ContractTransaction, ContractReceipt } from '@ethersproject/contracts';
 import { BigNumber } from '@ethersproject/bignumber';
-import { getERC20Contract } from '@lido-sdk/contracts';
+import { getERC20Contract } from '@okx-lido-sdk/contracts';
 import { useSDK } from './useSDK';
 import { useMountedState } from './useMountedState';
 import { useAllowance } from './useAllowance';

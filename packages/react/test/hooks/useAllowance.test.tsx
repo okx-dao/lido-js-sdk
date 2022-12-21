@@ -1,10 +1,10 @@
-jest.mock('@lido-sdk/contracts');
+jest.mock('@okx-lido-sdk/contracts');
 jest.mock('tiny-warning');
 
 import { FC } from 'react';
 import warning from 'tiny-warning';
 import { renderHook, act } from '@testing-library/react-hooks';
-import { getERC20Contract } from '@lido-sdk/contracts';
+import { getERC20Contract } from '@okx-lido-sdk/contracts';
 import { ProviderWrapper } from './testUtils';
 import { useAllowance } from '../../src/hooks/useAllowance';
 

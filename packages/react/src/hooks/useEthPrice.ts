@@ -1,7 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber';
-import { getAggregatorContract } from '@lido-sdk/contracts';
-import { getAggregatorAddress, CHAINS } from '@lido-sdk/constants';
-import { divide } from '@lido-sdk/helpers';
+import { getAggregatorContract } from '@okx-lido-sdk/contracts';
+import { getAggregatorAddress, CHAINS } from '@okx-lido-sdk/constants';
+import { divide } from '@okx-lido-sdk/helpers';
 import { useSDK } from './useSDK';
 import { SWRResponse } from './useLidoSWR';
 import { useContractSWR } from './useContractSWR';

@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react-hooks';
-import { TOKENS } from '@lido-sdk/constants';
+import { TOKENS } from '@okx-lido-sdk/constants';
 import { ProviderWrapper } from './testUtils';
 import { useTokenAddress } from '../../src/hooks/useTokenAddress';
 

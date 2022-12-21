@@ -2,7 +2,7 @@ import warning from 'tiny-warning';
 import invariant from 'tiny-invariant';
 import { useCallback, useEffect } from 'react';
 import { SWRConfiguration } from 'swr';
-import { CHAINS } from '@lido-sdk/constants';
+import { CHAINS } from '@okx-lido-sdk/constants';
 import {
   BaseProvider,
   JsonRpcProvider,

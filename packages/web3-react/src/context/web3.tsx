@@ -4,9 +4,9 @@ import {
   ExternalProvider,
   JsonRpcFetchFunc,
 } from '@ethersproject/providers';
-import { CHAINS } from '@lido-sdk/constants';
-import { getStaticRpcBatchProvider } from '@lido-sdk/providers';
-import { ProviderSDK as ProviderSDKBase } from '@lido-sdk/react';
+import { CHAINS } from '@okx-lido-sdk/constants';
+import { getStaticRpcBatchProvider } from '@okx-lido-sdk/providers';
+import { ProviderSDK as ProviderSDKBase } from '@okx-lido-sdk/react';
 import { Web3ReactProvider, useWeb3React } from '@web3-react/core';
 import { memo, FC } from 'react';
 import { SWRConfiguration } from 'swr';

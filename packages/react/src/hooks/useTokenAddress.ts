@@ -1,4 +1,4 @@
-import { getTokenAddress, TOKENS } from '@lido-sdk/constants';
+import { getTokenAddress, TOKENS } from '@okx-lido-sdk/constants';
 import { useSDK } from './useSDK';
 
 export const useTokenAddress = (token: TOKENS): string => {

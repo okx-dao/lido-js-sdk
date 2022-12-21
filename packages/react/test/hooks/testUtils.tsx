@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { CHAINS } from '@lido-sdk/constants';
+import { CHAINS } from '@okx-lido-sdk/constants';
 import { SDKContextProps, ProviderSDK } from '../../src/context';
 
 const supportedChainIds = [CHAINS.Rinkeby];

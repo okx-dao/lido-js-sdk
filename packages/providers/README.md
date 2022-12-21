@@ -1,7 +1,7 @@
 # Providers
 
 Providers for Lido Finance projects.
-Part of [Lido JS SDK](https://github.com/lidofinance/lido-js-sdk/#readme)
+Part of [Lido JS SDK](https://github.com/okx-dao/lido-js-sdk/#readme)
 
 A Provider is an abstraction of a connection to the Ethereum network, providing a concise, consistent interface to standard Ethereum node functionality. More details in the [ethers docs](https://docs.ethers.io/v5/api/providers/).
 
@@ -16,7 +16,7 @@ A Provider is an abstraction of a connection to the Ethereum network, providing 
 ## Install
 
 ```bash
-yarn add @lido-sdk/providers
+yarn add @okx-lido-sdk/providers
 ```
 
 ## RPC providers
@@ -30,8 +30,8 @@ Each getter returns a cached [Provider](https://docs.ethers.io/v5/api/providers/
 Returns a [JsonRpcProvider](https://docs.ethers.io/v5/api/providers/jsonrpc-provider/#JsonRpcProvider) instance.
 
 ```ts
-import { CHAINS } from '@lido-sdk/constants';
-import { getRpcProvider } from '@lido-sdk/providers';
+import { CHAINS } from '@okx-lido-sdk/constants';
+import { getRpcProvider } from '@okx-lido-sdk/providers';
 
 const provider = getRpcProvider(CHAINS.Mainnet, '/rpc/url');
 ```
@@ -41,8 +41,8 @@ const provider = getRpcProvider(CHAINS.Mainnet, '/rpc/url');
 Returns an instance of batch version of [JsonRpcProvider](https://docs.ethers.io/v5/api/providers/jsonrpc-provider/#JsonRpcProvider).
 
 ```ts
-import { CHAINS } from '@lido-sdk/constants';
-import { getRpcBatchProvider } from '@lido-sdk/providers';
+import { CHAINS } from '@okx-lido-sdk/constants';
+import { getRpcBatchProvider } from '@okx-lido-sdk/providers';
 
 const batchProvider = getRpcBatchProvider(CHAINS.Mainnet, '/rpc/url');
 ```
@@ -52,8 +52,8 @@ const batchProvider = getRpcBatchProvider(CHAINS.Mainnet, '/rpc/url');
 Returns a [StaticJsonRpcProvider](https://docs.ethers.io/v5/api/providers/jsonrpc-provider/#StaticJsonRpcProvider) instance.
 
 ```ts
-import { CHAINS } from '@lido-sdk/constants';
-import { getStaticRpcProvider } from '@lido-sdk/providers';
+import { CHAINS } from '@okx-lido-sdk/constants';
+import { getStaticRpcProvider } from '@okx-lido-sdk/providers';
 
 const staticProvider = getStaticRpcProvider(CHAINS.Mainnet, '/rpc/url');
 ```
@@ -63,8 +63,8 @@ const staticProvider = getStaticRpcProvider(CHAINS.Mainnet, '/rpc/url');
 Returns an instance of batch version of [StaticJsonRpcProvider](https://docs.ethers.io/v5/api/providers/jsonrpc-provider/#StaticJsonRpcProvider).
 
 ```ts
-import { CHAINS } from '@lido-sdk/constants';
-import { getStaticRpcBatchProvider } from '@lido-sdk/providers';
+import { CHAINS } from '@okx-lido-sdk/constants';
+import { getStaticRpcBatchProvider } from '@okx-lido-sdk/providers';
 
 const staticProvider = getStaticRpcBatchProvider(CHAINS.Mainnet, '/rpc/url');
 ```

@@ -1,7 +1,7 @@
 # React helpers
 
 React helpers for Lido Finance projects.
-Part of [Lido JS SDK](https://github.com/lidofinance/lido-js-sdk/#readme)
+Part of [Lido JS SDK](https://github.com/okx-dao/lido-js-sdk/#readme)
 
 - [Install](#install)
 - [Factories](#factories)
@@ -34,7 +34,7 @@ Part of [Lido JS SDK](https://github.com/lidofinance/lido-js-sdk/#readme)
 ## Install
 
 ```bash
-yarn add @lido-sdk/react
+yarn add @okx-lido-sdk/react
 ```
 
 ## Factories
@@ -48,8 +48,8 @@ yarn add @lido-sdk/react
 ```ts
 // use typechain package to generate factories for your contracts
 import { YOUR_ABI_FACTORY } from 'your/abi/folder';
-import { contractHooksFactory } from '@lido-sdk/react';
-import { CHAINS, TOKENS } from '@lido-sdk/constants';
+import { contractHooksFactory } from '@okx-lido-sdk/react';
+import { CHAINS, TOKENS } from '@okx-lido-sdk/constants';
 
 const getMyContractAddress = (chainId) => {
   // should return contract address
@@ -61,7 +61,7 @@ const { useContractRPC, useContractWeb3 } = contractHooksFactory(
 );
 ```
 
-Package `@lido-sdk/react` exports hooks for `WSTETH`, `STETH` and `LDO` contracts:
+Package `@okx-lido-sdk/react` exports hooks for `WSTETH`, `STETH` and `LDO` contracts:
 
 ```ts
 useWSTETHContractRPC();
@@ -85,7 +85,7 @@ useLDOContractWeb3();
 `hooksFactory` binds a token address to the [ERC20 hooks](#erc20-hooks) and returns an object of them. The factory function takes a callback, that uses to get a token address by chain id.
 
 ```ts
-import { hooksFactory } from '@lido-sdk/react';
+import { hooksFactory } from '@okx-lido-sdk/react';
 
 const getMyContractAddress = (chainId) => {
   // should return contract address
@@ -133,8 +133,8 @@ useLDOApprove(amount: BigNumber, spender: string, wrapper: UseApproveWrapper)
 To use ERC20 hooks, your app must be wrapped with `<ProviderSDK />`.
 
 ```tsx
-import { ProviderSDK } from '@lido-sdk/react';
-import { CHAINS } from '@lido-sdk/constants';
+import { ProviderSDK } from '@okx-lido-sdk/react';
+import { CHAINS } from '@okx-lido-sdk/constants';
 
 const supportedChainIds = [CHAINS.Mainnet, CHAINS.Goerli];
 const defaultChainId = CHAINS.Mainnet;
@@ -168,7 +168,7 @@ const App = ({ children }) => {
 ### useTotalSupply
 
 ```tsx
-import { useTotalSupply } from '@lido-sdk/react';
+import { useTotalSupply } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const token = 'token address';
@@ -182,7 +182,7 @@ const Component = () => {
 ### useTokenBalance
 
 ```tsx
-import { useTokenBalance } from '@lido-sdk/react';
+import { useTokenBalance } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const token = 'token address';
@@ -197,7 +197,7 @@ const Component = () => {
 ### useAllowance
 
 ```tsx
-import { useAllowance } from '@lido-sdk/react';
+import { useAllowance } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const token = 'token address';
@@ -212,7 +212,7 @@ const Component = () => {
 ### useApprove
 
 ```tsx
-import { useApprove } from '@lido-sdk/react';
+import { useApprove } from '@okx-lido-sdk/react';
 import { BigNumber } from '@ethersproject/bignumber';
 
 const Component = () => {
@@ -228,7 +228,7 @@ const Component = () => {
 ### useDecimals
 
 ```tsx
-import { useDecimals } from '@lido-sdk/react';
+import { useDecimals } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const token = 'token address';
@@ -248,7 +248,7 @@ const Component = () => {
 - `loading` and `initialLoading` flags
 
 ```tsx
-import { useLidoSWR } from '@lido-sdk/react';
+import { useLidoSWR } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const { data, loading } = useLidoSWR('/data', fetcher);
@@ -277,8 +277,8 @@ useLidoSWR('/data', fetcher, {
 `useLidoSWR` for contracts
 
 ```tsx
-import { useContractSWR } from '@lido-sdk/react';
-import { CHAINS, TOKENS } from '@lido-sdk/constants';
+import { useContractSWR } from '@okx-lido-sdk/react';
+import { CHAINS, TOKENS } from '@okx-lido-sdk/constants';
 
 const Component = () => {
   const accountAddress = 'your address';
@@ -302,8 +302,8 @@ const Component = () => {
 `useLidoSWR` over `contract.estimateGas[method]`
 
 ```tsx
-import { useContractEstimateGasSWR } from '@lido-sdk/react';
-import { CHAINS, TOKENS } from '@lido-sdk/constants';
+import { useContractEstimateGasSWR } from '@okx-lido-sdk/react';
+import { CHAINS, TOKENS } from '@okx-lido-sdk/constants';
 
 const Component = () => {
   const { data, loading } = useContractEstimateGasSWR({
@@ -323,7 +323,7 @@ const Component = () => {
 `useLidoSWR` for RPC provider
 
 ```tsx
-import { useEthereumSWR } from '@lido-sdk/react';
+import { useEthereumSWR } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const { data, loading } = useEthereumSWR({ method: 'getGasPrice' });
@@ -336,7 +336,7 @@ const Component = () => {
 ### useEthereumBalance
 
 ```tsx
-import { useEthereumBalance } from '@lido-sdk/react';
+import { useEthereumBalance } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const { data, loading } = useEthereumBalance();
@@ -349,7 +349,7 @@ const Component = () => {
 ### useFeeHistory
 
 ```tsx
-import { useFeeHistory } from '@lido-sdk/react';
+import { useFeeHistory } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const { data, loading } = useFeeHistory({ blocks: 1024 });
@@ -362,7 +362,7 @@ const Component = () => {
 ### useFeeAnalytics
 
 ```tsx
-import { useFeeAnalytics } from '@lido-sdk/react';
+import { useFeeAnalytics } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const { percentile, loading } = useFeeAnalytics({ blocks: 1024 });
@@ -376,7 +376,7 @@ const Component = () => {
 ### useEthPrice
 
 ```tsx
-import { useEthPrice } from '@lido-sdk/react';
+import { useEthPrice } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const { data, loading } = useEthPrice();
@@ -389,7 +389,7 @@ const Component = () => {
 ### useTxPrice
 
 ```tsx
-import { useTxPrice } from '@lido-sdk/react';
+import { useTxPrice } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const gasLimit = 10_000;
@@ -405,7 +405,7 @@ const Component = () => {
 ### useTokenToWallet
 
 ```tsx
-import { useTokenToWallet } from '@lido-sdk/react';
+import { useTokenToWallet } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const token = 'token address';
@@ -418,7 +418,7 @@ const Component = () => {
 ### useLocalStorage
 
 ```tsx
-import { useLocalStorage } from '@lido-sdk/react';
+import { useLocalStorage } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const initialValue = null;
@@ -431,7 +431,7 @@ const Component = () => {
 ### useDebounceCallback
 
 ```tsx
-import { useDebounceCallback } from '@lido-sdk/react';
+import { useDebounceCallback } from '@okx-lido-sdk/react';
 
 const Component = () => {
   const debounced = useDebounceCallback(callback);

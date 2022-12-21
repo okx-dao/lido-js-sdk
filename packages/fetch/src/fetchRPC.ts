@@ -1,5 +1,5 @@
 import invariant from 'tiny-invariant';
-import { CHAINS } from '@lido-sdk/constants';
+import { CHAINS } from '@okx-lido-sdk/constants';
 import { fetchWithFallbacks } from './fetchWithFallbacks';
 import { getRPCUrls, RPCProvidersKeys } from './providersUrls';
 import { RequestInit, Response } from './fetch';

@@ -1,4 +1,4 @@
-import { CHAINS, CHAINS_IDS } from '@lido-sdk/constants';
+import { CHAINS, CHAINS_IDS } from '@okx-lido-sdk/constants';
 import {
   getInfuraRPCUrl,
   getAlchemyRPCUrl,

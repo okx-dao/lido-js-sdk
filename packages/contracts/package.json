@@ -1,25 +1,25 @@
 {
-  "name": "@lido-sdk/contracts",
+  "name": "@okx-lido-sdk/contracts",
   "version": "0.0.0-semantic-release",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "license": "MIT",
-  "homepage": "https://github.com/lidofinance/lido-js-sdk",
+  "homepage": "https://github.com/okx-dao/lido-js-sdk",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lidofinance/lido-js-sdk.git",
+    "url": "https://github.com/okx-dao/lido-js-sdk.git",
     "directory": "packages/contracts"
   },
   "bugs": {
-    "url": "https://github.com/lidofinance/lido-js-sdk/issues"
+    "url": "https://github.com/okx-dao/lido-js-sdk/issues"
   },
   "sideEffects": false,
   "keywords": [
-    "lido",
-    "lido-sdk",
-    "lido-js-sdk",
-    "lidofinance"
+    "okx-lido",
+    "okx-lido-sdk",
+    "okx-lido-js-sdk",
+    "okx-lidofinance"
   ],
   "scripts": {
     "typechain": "typechain --target=ethers-v5 --out-dir ./src/generated './src/abi/*.json'"
@@ -34,7 +34,7 @@
     "@ethersproject/bytes": "^5.4.0",
     "@ethersproject/contracts": "^5.4.1",
     "@ethersproject/providers": "^5.4.5",
-    "@lido-sdk/providers": "workspace:*",
+    "@okx-lido-sdk/providers": "workspace:*",
     "@typechain/ethers-v5": "^7.1.0",
     "@types/jest": "^27.0.2",
     "ethers": "^5.4.7",
@@ -48,7 +48,7 @@
     "ethers": "5"
   },
   "dependencies": {
-    "@lido-sdk/constants": "workspace:*",
+    "@okx-lido-sdk/constants": "workspace:*",
     "tiny-invariant": "^1.1.0"
   }
 }

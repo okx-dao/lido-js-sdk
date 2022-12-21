@@ -1,6 +1,6 @@
 import invariant from 'tiny-invariant';
 import { useCallback } from 'react';
-import { openWindow } from '@lido-sdk/helpers';
+import { openWindow } from '@okx-lido-sdk/helpers';
 import { useConnectors } from './useConnectors';
 import { useWeb3 } from './useWeb3';
 import {

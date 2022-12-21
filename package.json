@@ -1,5 +1,5 @@
 {
-  "name": "lido-js-sdk",
+  "name": "okx-lido-js-sdk",
   "version": "0.0.0-semantic-release",
   "private": true,
   "workspaces": [
@@ -12,7 +12,7 @@
     "test:watch": "jest --watch --coverage",
     "lint": "eslint --ext ts,tsx .",
     "postinstall": "husky install && yarn typechain",
-    "typechain": "yarn workspace @lido-sdk/contracts run typechain"
+    "typechain": "yarn workspace @okx-lido-sdk/contracts run typechain"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",

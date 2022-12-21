@@ -1,4 +1,4 @@
-import { useLocalStorage } from '@lido-sdk/react';
+import { useLocalStorage } from '@okx-lido-sdk/react';
 import { STORAGE_CONNECTOR_KEY } from '../constants';
 import { Connector } from '../context';
 

@@ -1,5 +1,5 @@
 import invariant from 'tiny-invariant';
-import { CHAINS } from '@lido-sdk/constants';
+import { CHAINS } from '@okx-lido-sdk/constants';
 import {
   BaseProvider,
   Web3Provider,

@@ -1,8 +1,8 @@
-jest.mock('@lido-sdk/contracts');
+jest.mock('@okx-lido-sdk/contracts');
 
 import { FC } from 'react';
 import { act, renderHook } from '@testing-library/react-hooks';
-import { getERC20Contract } from '@lido-sdk/contracts';
+import { getERC20Contract } from '@okx-lido-sdk/contracts';
 import { ProviderWrapper } from './testUtils';
 import { useTokenToWallet } from '../../src/hooks/useTokenToWallet';
 

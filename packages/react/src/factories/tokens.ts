@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber';
-import { TOKENS, CHAINS, getTokenAddress } from '@lido-sdk/constants';
+import { TOKENS, CHAINS, getTokenAddress } from '@okx-lido-sdk/constants';
 import {
   SWRResponse,
   UseApproveResponse,

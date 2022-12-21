@@ -1,7 +1,7 @@
 jest.mock('node-fetch');
 
 import fetch from 'node-fetch';
-import { CHAINS } from '@lido-sdk/constants';
+import { CHAINS } from '@okx-lido-sdk/constants';
 import { fetchRPC } from '../src/fetchRPC';
 
 const { Response } = jest.requireActual('node-fetch');

@@ -1,7 +1,7 @@
 # Fetchers
 
 Fetchers for Lido Finance projects.
-Part of [Lido JS SDK](https://github.com/lidofinance/lido-js-sdk/#readme)
+Part of [Lido JS SDK](https://github.com/okx-dao/lido-js-sdk/#readme)
 
 - [Install](#install)
 - [Fetch](#fetch)
@@ -15,7 +15,7 @@ Part of [Lido JS SDK](https://github.com/lidofinance/lido-js-sdk/#readme)
 ## Install
 
 ```bash
-yarn add @lido-sdk/fetch
+yarn add @okx-lido-sdk/fetch
 ```
 
 ## Fetch
@@ -23,7 +23,7 @@ yarn add @lido-sdk/fetch
 node-fetch package [NPM](https://www.npmjs.com/package/node-fetch), [Github](https://github.com/node-fetch/node-fetch)
 
 ```ts
-import { fetch } from '@lido-sdk/fetch';
+import { fetch } from '@okx-lido-sdk/fetch';
 
 const response = await fetch('https://example.com');
 const result = await response.json();
@@ -36,7 +36,7 @@ const result = await response.json();
 A wrapper over `fetch` which takes an array of URLs instead of a single URL. If a request throws an exception, it takes the following URL from the array and repeats the request to it.
 
 ```ts
-import { fetchWithFallbacks } from '@lido-sdk/fetch';
+import { fetchWithFallbacks } from '@okx-lido-sdk/fetch';
 
 const urls = ['https://example.com', 'https://fallback.com'];
 
@@ -51,7 +51,7 @@ const result = await response.json();
 A wrapper over `fetchWithFallbacks`, which is useful as a backend part of proxying RPC requests from frontend to API provider.
 
 ```ts
-import { fetchRPC } from '@lido-sdk/fetch';
+import { fetchRPC } from '@okx-lido-sdk/fetch';
 
 const options = {
   urls: [
@@ -81,7 +81,7 @@ const rpc = async (req, res) => {
 Options extend `RequestInit` interface with the `urls` and `providers`. `urls` have priority over `providers`.
 
 ```tsx
-import { CHAINS } from '@lido-sdk/constants';
+import { CHAINS } from '@okx-lido-sdk/constants';
 import { RequestInit } from 'node-fetch';
 
 interface FetchRPCOptions extends RequestInit {
@@ -102,8 +102,8 @@ interface FetchRPCOptions extends RequestInit {
 Returns [infura](https://infura.io/) endpoint for API key and chainId
 
 ```ts
-import { getInfuraRPCUrl } from '@lido-sdk/fetch';
-import { CHAINS } from '@lido-sdk/constants';
+import { getInfuraRPCUrl } from '@okx-lido-sdk/fetch';
+import { CHAINS } from '@okx-lido-sdk/constants';
 
 const url = getInfuraRPCUrl(CHAINS.Mainnet, 'YOUR_API_KEY');
 console.log(url); // https://mainnet.infura.io/v3/YOUR_API_KEY
@@ -114,8 +114,8 @@ console.log(url); // https://mainnet.infura.io/v3/YOUR_API_KEY
 Returns [alchemy](https://www.alchemy.com/) endpoint for API key and chainId
 
 ```ts
-import { getAlchemyRPCUrl } from '@lido-sdk/fetch';
-import { CHAINS } from '@lido-sdk/constants';
+import { getAlchemyRPCUrl } from '@okx-lido-sdk/fetch';
+import { CHAINS } from '@okx-lido-sdk/constants';
 
 const url = getAlchemyRPCUrl(CHAINS.Mainnet, 'YOUR_API_KEY');
 console.log(url); // https://eth-mainnet.alchemyapi.io/v2/YOUR_API_KEY

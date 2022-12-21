@@ -3,8 +3,8 @@ import {
   getTokenAddress,
   getAggregatorAddress,
   TOKENS,
-} from '@lido-sdk/constants';
-import { getRpcProvider } from '@lido-sdk/providers';
+} from '@okx-lido-sdk/constants';
+import { getRpcProvider } from '@okx-lido-sdk/providers';
 import {
   getAggregatorContract,
   getERC20Contract,

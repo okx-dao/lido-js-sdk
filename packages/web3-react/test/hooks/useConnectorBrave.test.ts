@@ -1,9 +1,9 @@
-jest.mock('@lido-sdk/helpers');
+jest.mock('@okx-lido-sdk/helpers');
 jest.mock('../../src/hooks/useWeb3');
 jest.mock('../../src/hooks/useConnectors');
 
 import { renderHook, act } from '@testing-library/react-hooks';
-import { openWindow } from '@lido-sdk/helpers';
+import { openWindow } from '@okx-lido-sdk/helpers';
 import { useConnectorBraveWallet } from '../../src/hooks/useConnectorBraveWallet';
 import { useWeb3 } from '../../src/hooks/useWeb3';
 import { useConnectors } from '../../src/hooks/useConnectors';

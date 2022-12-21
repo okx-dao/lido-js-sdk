@@ -2,7 +2,7 @@ import {
   getEtherscanLink,
   EtherscanEntities,
   openWindow,
-} from '@lido-sdk/helpers';
+} from '@okx-lido-sdk/helpers';
 import { useCallback } from 'react';
 import { useSDK } from './useSDK';
 

@@ -1,9 +1,9 @@
-jest.mock('@lido-sdk/contracts');
+jest.mock('@okx-lido-sdk/contracts');
 jest.mock('../../src/hooks/useAllowance');
 
 import { FC } from 'react';
 import { act, renderHook } from '@testing-library/react-hooks';
-import { getERC20Contract } from '@lido-sdk/contracts';
+import { getERC20Contract } from '@okx-lido-sdk/contracts';
 import { BigNumber } from '@ethersproject/bignumber';
 import { Zero } from '@ethersproject/constants';
 import { ProviderWrapper } from './testUtils';

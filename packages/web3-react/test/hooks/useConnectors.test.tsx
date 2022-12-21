@@ -8,7 +8,7 @@ import { AbstractConnector } from '@web3-react/abstract-connector';
 import { Web3Provider } from '@ethersproject/providers';
 import { renderHook as renderHookOnServer } from '@testing-library/react-hooks/server';
 import { SafeAppConnector } from '@gnosis.pm/safe-apps-web3-react';
-import { CHAINS } from '@lido-sdk/constants';
+import { CHAINS } from '@okx-lido-sdk/constants';
 import { useAutoConnect, useConnectors, useWeb3 } from '../../src';
 import { ProviderWeb3 } from '../../src/context';
 
